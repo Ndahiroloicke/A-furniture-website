@@ -1,0 +1,278 @@
+/* Reset*/
+* {
+  /* Alternative box model */
+  box-sizing: border-box;
+
+  /* Reset padding and margin in all elements */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.55;
+  color: rgb(58, 56, 69);
+}
+
+h1 {
+  font-size: 3.15rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: rgb(60, 58, 71, 0.8);
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+}
+h3 .large {
+  font-size: 3.15rem;
+}
+.dark h3 {
+  color: white;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+p.section-intro {
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+dark p .section-intro {
+  color: rgb(255, 255, 255, 0.8);
+}
+p .number {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: rgb(60, 58, 71, 0.5);
+}
+p .large {
+  font-size: 1.75rem;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(159, 118, 87);
+}
+a:hover {
+  color: rgb(58, 56, 69);
+}
+form input,
+form textarea,
+form button {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+/*container*/
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.container .small {
+  width: 60%;
+  max-width: 100%;
+}
+/*header*/
+#main-header,
+section {
+  padding: 13rem 0;
+  text-align: center;
+}
+#main-header h1 {
+  margin: 7rem 0 1rem 0;
+}
+#main-header h2 {
+  margin-bottom: 7rem;
+}
+.btn {
+  padding: 1.3rem 3.5rem;
+  border: 1px solid rgb(159, 118, 87);
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(60, 58, 71);
+  border-color: rgb(60, 58, 71);
+  color: white;
+}
+/* chair*/
+#our-chairs {
+  background-color: #eff0ea;
+}
+section header {
+  margin-bottom: 3.5rem;
+}
+h3 + p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+img {
+  max-width: 100%;
+}
+.gallery div {
+  text-align: start;
+}
+.gallery img {
+  margin-bottom: 1.3rem;
+}
+/*contact*/
+.dark {
+  background-color: rgb(60, 58, 71);
+}
+.dark label {
+  color: rgb(255, 255, 255, 0.8);
+}
+form div {
+  margin-top: 1.75rem;
+}
+form label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+form input,
+form textarea {
+  background-color: rgb(255, 255, 255, 0.1);
+  border: none;
+  padding: 1rem;
+  width: 50%;
+  color: rgb(255, 255, 255);
+  resize: none;
+}
+form input :focus,
+form textarea:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+form button {
+  width: 100%;
+  cursor: pointer;
+}
+.dark .btn {
+  border: 1px solid rgb(255, 255, 255, 0.8);
+  width: 50%;
+
+  background: transparent;
+  color: white;
+}
+.dark .btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 58, 71);
+}
+p.muted {
+  color: rgb(255, 255, 255, 0.5);
+}
+form button + p {
+  margin-top: 1.75rem;
+}
+.socialicons {
+  flex-direction: row;
+}
+p.large + .social-icons {
+  margin-top: 7rem;
+}
+footer {
+  padding: 5rem 0;
+}
+footer p {
+  text-align: center;
+}
+.twitter {
+  margin-left: 70px;
+}
+@media screen and (max-width: 600px) {
+  h1,
+  h3 .large {
+    font-size: 2.3rem;
+  }
+  h2,
+  p .large {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .container.small {
+    width: 90%;
+  }
+  #main-header,
+  section {
+    padding: 6rem 0;
+  }
+  footer {
+    padding: 2.5rem 0;
+  }
+  p.large + .social-icons {
+    margin-top: 3.5rem;
+  }
+}
+.socialicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1.2rem;
+}
+.socialicons li a img {
+  height: 20px;
+  width: 20px;
+}
+@media screen and (max-width: 800px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.mocking {
+  width: 30%;
+  height: 50px;
+  max-width: 30%;
+  margin-left: 35%;
+  margin-bottom: 3%;
+  color: black;
+  background-color: white;
+}
+.mocking:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  background-color: rgb(58, 56, 69);
+  border: none;
+}
+.mocking:hover a{
+  color: white;
+}
+.mocking a {
+  color: black;
+}
+
+.socialicons li {
+  list-style: none;
+  margin: 0 40px;
+}
